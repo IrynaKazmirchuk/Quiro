@@ -1,0 +1,95 @@
+.header {
+  padding: 40rem 0;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    color: $c--paragraph;
+    font-size: 24rem;
+    font-weight: 600;
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include tablet {
+      position: fixed;
+      width: 70%;
+      height: 100%;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      background: var(--c-primary);
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-120%);
+      transition: var(--transition);
+    }
+
+    &._active {
+      transform: translateX(0);
+    }
+
+    .icon-close {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      color: var(--c-text-white);
+    }
+  }
+
+  &__a {
+    color: #000;
+    font-size: 16rem;
+    font-weight: 400;
+    position: relative;
+    transition: $transition;
+    &:hover {
+      color: $c--primary;
+      &::before {
+        width: calc(100% - 10px);
+      }
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      background: $c--primary;
+      height: 1px;
+      bottom: -3px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 20px;
+      transition: $transition;
+    }
+
+    &._active {
+      color: $c--primary;
+      font-weight: 600;
+      &::before {
+        width: calc(100% - 10px);
+      }
+    }
+
+    @include tablet {
+      color: var(--c-text-white);
+    }
+  }
+}
+
+.icon-menu,
+.icon-close {
+  cursor: pointer;
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+  }
+}

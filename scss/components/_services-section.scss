@@ -1,0 +1,63 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370rem, 1fr));
+  gap: 30rem;
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+.service {
+  border-radius: 15px;
+  background: $c--terciary;
+  padding: 46rem 26rem;
+  text-align: center;
+  transition: $transition;
+  &:hover {
+    background: $c--primary;
+     .service__title, .service__desc, a {
+        color: $white;
+     }
+     svg path {
+        fill: $white;
+     }
+     scale: 0.95;
+        
+
+  }
+
+  &__img {
+    width: 110rem;
+    height: 110rem;
+    margin-inline: auto;
+    margin-bottom: 27rem;
+  }
+
+  &__title {
+    color: $c--paragraph;
+    font-size: 24rem;
+    font-weight: 600;
+    margin-bottom: 17rem;
+  }
+
+  &__desc {
+    color: $c--text;
+    text-align: center;
+    font-size: 16rem;
+    font-weight: 400;
+    margin-bottom: 18rem;
+  }
+
+  &__btn {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      color: $c--primary;
+      font-family: $ff-main;
+      font-size: 16rem;
+      font-weight: 600;
+      text-decoration-line: underline;
+    }
+  }
+}
