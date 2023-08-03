@@ -33,5 +33,10 @@
     @include mobile {
       font-size: 16rem;
     }
+    transition: $transition;
+    &:hover {
+      background: darken($c--primary, 10%);
+      scale: 0.9;
+    }
   }
 }

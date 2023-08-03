@@ -18,3 +18,10 @@ body {
   margin-inline: auto;
   width: 100%;
 }
+a {
+  color: $c--paragraph;
+  transition: $transition;
+  &:hover {
+    color: $c--primary;
+  }
+}

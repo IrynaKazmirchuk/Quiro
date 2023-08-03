@@ -17,7 +17,9 @@
     display: flex;
     align-items: center;
     gap: 20px;
-
+    position: relative;
+    z-index: 3;
+    
     @include tablet {
       position: fixed;
       width: 70%;
@@ -29,7 +31,8 @@
       align-items: center;
       justify-content: center;
       transform: translateX(-120%);
-      transition: var(--transition);
+      transition: $transition;
+      gap: 40px;
     }
 
     &._active {
@@ -76,10 +79,14 @@
       &::before {
         width: calc(100% - 10px);
       }
+      @include tablet {
+        color: var(--c-text-white);
+      }
     }
 
     @include tablet {
       color: var(--c-text-white);
+      font-size: 18rem;
     }
   }
 }
