@@ -126,12 +126,6 @@ ul {
   src: url("fonts/worksans-semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal; }
-:root {
-  --ff: 'Work Sans', sans-serif;
-  --c-primary: #8842F0;
-  --c-text-white: #fff;
-  --c-border: #eee; }
-
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -664,13 +658,13 @@ a {
   .service:hover {
     background: #8842F0;
     scale: 0.95; }
-    .service:hover .service__title, .service:hover .service__desc, .service:hover a {
+    .service:hover .service__title,
+    .service:hover .service__desc,
+    .service:hover a {
       color: #fff; }
     .service:hover svg path {
       fill: #fff; }
   .service__img {
-    width: 110px;
-    height: 110px;
     margin-inline: auto;
     margin-bottom: 27rem; }
   .service__title {
