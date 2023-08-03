@@ -188,9 +188,10 @@ ul {
   -webkit-touch-callout: none; }
 
 .owl-carousel .owl-item img {
-  max-height: 450px;
-  min-height: 450px;
+  max-height: 530px;
+  min-height: 530px;
   object-fit: cover;
+  object-position: center;
   border-radius: 30rem;
   display: block;
   width: 100%; }
@@ -403,7 +404,7 @@ ul {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #8842F0; }
+  background: #8842f0; }
 
 html {
   font-size: 1px; }
