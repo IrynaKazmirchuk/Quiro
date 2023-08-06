@@ -6,17 +6,13 @@
     grid-template-columns: 431rem auto auto;
     gap: 108rem;
     @include desktop-small {
-        grid-template-columns: 350rem auto auto;
-        gap: 30rem;
+      grid-template-columns: 350rem auto auto;
+      gap: 30rem;
     }
     @include tablet {
-        grid-template-columns: 1fr;
-        justify-content: center;
-
+      grid-template-columns: 1fr;
+      justify-content: center;
     }
-  }
-
-  &__about {
   }
 
   &__logo {
@@ -32,9 +28,6 @@
     font-size: 16px;
     font-weight: 400;
     max-width: 431rem;
-  }
-
-  &__info {
   }
 
   &__info-header,
@@ -53,12 +46,6 @@
     margin-bottom: 37rem;
     display: inline-flex;
     gap: 16rem;
-  }
-
-  &__hours {
-  }
-
-  &__hours-header {
   }
 
   &__hours-value {

@@ -377,7 +377,8 @@ ul {
 .owl-theme .owl-dots {
   position: absolute;
   bottom: 20px;
-  left: 47%;
+  left: 50%;
+  transform: translate(-50%);
   text-align: center;
   -webkit-tap-highlight-color: transparent; }
 
