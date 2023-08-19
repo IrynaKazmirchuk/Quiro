@@ -554,7 +554,7 @@ a {
         flex-direction: column;
         left: 0;
         top: 0;
-        background: var(--c-primary);
+        background: #8842F0;
         align-items: center;
         justify-content: center;
         transform: translateX(-120%);
@@ -817,3 +817,5 @@ a {
   .footer__hours-value {
     display: grid;
     margin-bottom: 15rem; }
+
+/*# sourceMappingURL=style.css.map */

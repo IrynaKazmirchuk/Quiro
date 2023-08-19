@@ -27,12 +27,13 @@
       flex-direction: column;
       left: 0;
       top: 0;
-      background: var(--c-primary);
+      background: $c--primary;
       align-items: center;
       justify-content: center;
       transform: translateX(-120%);
       transition: $transition;
       gap: 40px;
+      
     }
 
     &._active {

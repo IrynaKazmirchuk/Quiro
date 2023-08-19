@@ -131,18 +131,6 @@ ul {
   padding: 0;
 }
 
-:root {
-  --ff: "Poppins", sans-serif;
-  --transition: 0.2s all ease-in-out;
-  --c-primary: #0b8fed;
-  --c-text-white: #fff;
-  --c-border: #eee;
-}
-
-body {
-  font-family: var(--ff);
-}
-
 *::-webkit-scrollbar {
   width: 10px;
   height: 10px;
